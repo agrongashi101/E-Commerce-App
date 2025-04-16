@@ -5,11 +5,13 @@ const imageMap = {
   'puma.jpg': PumaImage,
 };
 
+
 const getProductClass = (cartLength) => {
   if (cartLength === 1) return 'single-product';
   if (cartLength === 2) return 'two-products';
   return '';
 };
+
 
 const Checkout = () => {
   const [cart, setCart] = useState([]);
@@ -103,13 +105,13 @@ const Checkout = () => {
                 </div>
 
                 <p><strong>Totali: €{(item.price * item.quantity).toFixed(2)}</strong></p>
-                <button onClick={() => removeFromCart(item.id)}>Fshi</button>
+                <button onClick={() => removeFromCart(item.id)}>Fshij</button>
               </div>
             );
           })}
         </div>
       )}
-      <h3>Total për pagesë: €{total.toFixed(2)}</h3>
+      <h3>Total për pagesë është: €{total.toFixed(2)}</h3>
       <button
         onClick={handleCheckout}
         disabled={cart.length === 0}
