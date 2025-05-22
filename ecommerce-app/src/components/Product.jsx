@@ -1,12 +1,9 @@
 import React from 'react';
 
-// Importo fotot manualisht
 import PumaImage from '../assets/images/puma.jpg';
-// Mund të shtosh më shumë: import NikeImage from '../assets/images/nike.jpg';
 
 const imageMap = {
   'puma.jpg': PumaImage,
-  // 'nike.jpg': NikeImage,
 };
 
 const Product = ({ product, addToCart }) => {
